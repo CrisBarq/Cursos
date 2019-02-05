@@ -33,7 +33,7 @@ public class DemoApplication extends SpringBootServletInitializer {
 	@Bean
 	public ServletRegistrationBean<FacesServlet> servletRegistrationBean() {
 		FacesServlet servlet = new FacesServlet();
-		return new ServletRegistrationBean<FacesServlet>(servlet, "*.jsf");
+		return new ServletRegistrationBean<FacesServlet>(servlet, "*.xhtml");
 	}
 
 	@Bean

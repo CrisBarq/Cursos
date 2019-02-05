@@ -17,7 +17,6 @@
 <h:body>
 	<ui:include src="nav.xhtml" />
 	<h1>Catálogo de cursos</h1>
-
 	<p:dataTable value="#{courseBean.courseList}" var="course" rows="10"
 		paginator="true" rowsPerPageTemplate="5,10,15"
 		paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
@@ -43,14 +42,5 @@
 	<h:form>
 		<p:commandButton value="Nuevo curso" action="#{courseBean.addCourse}" style="margin-right:20px;" ajax="false" />
 	</h:form>
-
-
-
-	<!-- 	#{centreBean.printMsgFromSpring()} -->
-	<!-- 	#{centreBean.init()} -->
-	<!-- 	<h:form> -->
-	<!-- 	<h:inputText id="username" required="true" requiredMessage="Please enter Username!">Input</h:inputText> -->
-	<!-- 	<p:commandButton value="Add" action="#{centreBean.init()}"/> -->
-	<!-- 	</h:form> -->
 </h:body>
 </html>
