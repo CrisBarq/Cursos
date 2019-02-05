@@ -23,25 +23,25 @@
 				
 				<p:selectBooleanCheckbox value="#{courseBean.course.logActive}" itemLabel="Activo"/>
 				
-				<p:outputLabel for="teacher" value="Teacher" />
+				<p:outputLabel for="teacher" value="Profesor" />
 				<p:selectOneMenu id="teacher" value="#{courseBean.teacher}" required="true" dynamic="true" style="width:125px">
 					<f:selectItems value="#{courseBean.teacherList}" />
 				</p:selectOneMenu>
 				<p:message for="teacher" />
 
-				<p:outputLabel for="title" value="Title" />
+				<p:outputLabel for="title" value="Título" />
 				<p:inputText id="title" value="#{courseBean.course.title}"
 					required="true" label="Codigo">
 					<f:validateLength minimum="2" />
 				</p:inputText>
 				<p:message for="title" />
 
-				<p:outputLabel for="level" value="Level" />
+				<p:outputLabel for="level" value="Nivel" />
 				<p:selectOneMenu id="level" value="#{courseBean.level}" required="true" dynamic="true" style="width:125px">
 					<f:selectItems value="#{courseBean.levelList}" />
 				</p:selectOneMenu>
 				
-				<h:outputLabel for="hours" value="Hours" />
+				<h:outputLabel for="hours" value="Horas" />
 				<p:spinner id="hours" value="#{courseBean.course.hours}" />
 				
 <!-- 				<p:fileUpload value="#{courseBean.uploadedFile}" mode="simple"/> -->

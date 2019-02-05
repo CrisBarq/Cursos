@@ -21,19 +21,19 @@
 		paginator="true" rowsPerPageTemplate="5,10,15"
 		paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
 
-		<p:column headerText="Title" sortBy="#{course.title}">
+		<p:column headerText="Título" sortBy="#{course.title}">
 			<h:outputText value="#{course.title}" />
 		</p:column>
 		
-		<p:column headerText="Teacher">
+		<p:column headerText="Profesor">
 			<h:outputText value="#{course.teacher.name}" />
 		</p:column>
 		
-		<p:column headerText="Level">
+		<p:column headerText="Nivel">
 			<h:outputText value="#{course.level.desLevel}" />
 		</p:column>
 		
-		<p:column headerText="Hours">
+		<p:column headerText="Horas">
 			<h:outputText value="#{course.hours}" />
 		</p:column>
 
