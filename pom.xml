@@ -17,7 +17,6 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<start-class>com.company.demo.DemoApplication</start-class>
-		<!-- <start-class>com.courses.demo.Courses</start-class> -->
 	</properties>
 
 
@@ -30,9 +29,10 @@
 	</repositories>
 
 	<dependencies>
+		<!-- QUITAR PARA DESPLEGAR EN TOMCAT -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -47,9 +47,10 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- QUITAR PARA DESPLEGAR EN TOMCAT -->
 		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
+		<groupId>org.apache.tomcat.embed</groupId>
+		<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 
 		<dependency>
@@ -87,6 +88,7 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 
+		<!-- QUITAR PROVIDED PARA DESPLEGAR EN TOMCAT -->
 		<dependency>
 			<groupId>javax.enterprise</groupId>
 			<artifactId>cdi-api</artifactId>
